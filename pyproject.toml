@@ -1,0 +1,13 @@
+[project]
+name = "ray-turbopuffer"
+version = "0.1.0"
+description = "A Ray Datasource and Datasink for turbopuffer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.3.1",
+    "pyarrow>=20.0.0",
+    "ray[default]>=2.47.1",
+    "tqdm>=4.67.1",
+    "turbopuffer>=0.5.10",
+]
