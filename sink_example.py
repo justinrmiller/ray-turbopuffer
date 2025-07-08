@@ -21,9 +21,7 @@ if __name__ == "__main__":
                         "id": doc_id,
                         "vector": np.random.rand(64).tolist(),  # Convert to list
                         "text": f"Document {doc_id} content from batch {batch_id}",
-                        "source": str(
-                            np.random.choice(sources)
-                        ),  # Convert to Python string
+                        "source": str(np.random.choice(sources)),
                         "batch_id": batch_id,
                         "timestamp": f"2024-07-{(doc_id % 30) + 1:02d}T{(doc_id % 24):02d}:00:00Z",
                     }
